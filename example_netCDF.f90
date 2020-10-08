@@ -76,7 +76,7 @@ PROGRAM netCDF_example
      !<Read the variable from netCDF file 
      var_name = "TEMP" 
      ALLOCATE( var_4d(1:N1, 1:N2, 1:N3, 1:N4) )
-     CALL netCDF_read_4d(temp, ind_lon_str, ind_lat_str,                        &
+     CALL netCDF_read_4d(var_4d, ind_lon_str, ind_lat_str,                      &
                                ind_lev_str, ind_time_str)
 
      DEALLOCATE( var_4d )
